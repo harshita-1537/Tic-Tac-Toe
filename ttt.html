@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link rel="stylesheet" href="ttt.css">
+    <script src="ttt.js"></script>
+    
+</head>
+<body ng-app="">
+    <div class="container" id="a">
+  <center><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#myModal">
+    Play
+  </button>
+  
+</center>
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Let's Play</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form><b><p>Player 1:<input type="text" required ng-model="p1"></p>
+          <p>Player 2:<input type="text" required ng-model="p2"></p></b><br>
+          <center><input type="submit" class="btn btn-warning k" data-dismiss="modal" value="Submit">
+        </center></form></div>
+      </div>
+    </div>
+</div>
+</div>
+
+    <div id="b" style="display:none">
+        <div><b><span>{{p1}}---X</span><span class="float-right">{{p2}}---0</span></b></div>
+        <h4>Tic-Tac-Toe</h4>
+        <center><table>
+         <tr>
+             <td style="border-right:4px solid black;border-bottom:4px solid black" onclick="sl(0,0)"></td>
+             <td style="border-right:4px solid black;border-bottom:4px solid black" onclick="sl(0,1)"></td>
+             <td style="border-bottom:4px solid black" onclick="sl(0,2)"></td>
+         </tr>
+        <tr>
+             <td style="border-right:4px solid black;border-bottom:4px solid black" onclick="sl(1,0)"></td>
+             <td style="border-right:4px solid black;border-bottom:4px solid black" onclick="sl(1,1)"></td>
+             <td style="border-bottom:4px solid black" onclick="sl(1,2)"></td>
+         </tr>
+         <tr>
+             <td style="border-right:4px solid black" onclick="sl(2,0)"></td>
+             <td style="border-right:4px solid black" onclick="sl(2,1)"></td>
+             <td onclick="sl(2,2)"></td>
+            </tr>
+        </table>
+        
+        </center>
+    </div>
+    <center><div class="alert s"><pre>Hurrah!! {{p1}} won.</pre><button  class="btn btn-warning bt" type="button" name="reset" value="Reset" onclick="history.go(0)"> Reset</button></center></div> 
+      <center><div class="alert s1"><pre>Hurrah!! {{p2}} won. </pre><button  class="btn btn-warning bt" type="button" name="reset" value="Reset" onclick="history.go(0)"> Reset</button></div></center>
+    <center><div class="alert s2"><pre>Opps Draw!!</pre><button  class="btn btn-warning bt" type="button" name="reset" value="Reset" onclick="history.go(0)"> Reset</button></div></center>
+      
+</body>
+</html>

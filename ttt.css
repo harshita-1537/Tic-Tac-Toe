@@ -1,0 +1,51 @@
+body{
+    background-image:url("ttt1.jpg");
+   
+}
+ #b{
+     background-image:linear-gradient(to bottom,yellow,pink,blue);
+     padding:20px;
+     width:50%;
+     height:50%;
+     margin: auto;
+     display:block;
+     border: 3px solid #000a01;
+   }
+ h4{
+     text-align: center;
+ }
+ .alert {
+    padding: 10px;
+    background-color: #5ea2fc;
+    color: white;
+  }
+ #a
+ {
+     padding:200px;
+ }
+ 
+ td{
+     padding:50px;
+ }
+ .s{
+     display: none;
+ }
+ .s1,.s2{
+     display: none;
+ }
+ .reset { 
+    padding: 6px; 
+} 
+pre{
+    color:rgb(14, 13, 13);
+    font-weight:bold;
+    font-size:large;
+}
+.modal-header {
+    background: #512DA8;
+    color: floralwhite; }
+    .modal-header button {
+      color: floralwhite; }
+  
+  .modal-body {
+    background: #D1C4E9; }
